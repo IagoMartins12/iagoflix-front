@@ -1,10 +1,19 @@
 import CardsSection from '@/src/components/homeNoAuth/cardsSection';
 import HeaderNoAuth from '@/src/components/homeNoAuth/headerNoAuth';
 import PresentationSection from '@/src/components/homeNoAuth/presentationSection';
+import SlideSection from '@/src/components/homeNoAuth/slideSection';
+import courseService, { CourseType } from '@/src/services/courseService';
+import { GetStaticProps } from 'next';
 import Head from 'next/head'
+import { ReactNode } from 'react';
 import styles from '../styles/HomeNoAuth.module.scss'
 
-const HomeNoAuth = () => {
+interface IndexPageProps {
+  children?: ReactNode
+  course: CourseType[]
+}
+
+const HomeNoAuth = ({course} : IndexPageProps ) => {
   return (
     <>
       <Head>
@@ -20,9 +29,21 @@ const HomeNoAuth = () => {
           <PresentationSection/>
         </div>
         <CardsSection/>
+        <SlideSection newestCourses={course}/>
       </main>
     </>
   );
+}
+
+//Capturando os cursos. Essa validação é feito uma vez por dia, ou seja, a cada 24 horas essa função irá rodar
+export const getStaticProps: GetStaticProps =async () => {
+  const res = await courseService.getNewestCourse()
+  return {
+    props: {
+      course: res.data
+    }, 
+    revalidate: 3600 * 24 
+  }
 }
 
 export default HomeNoAuth;
