@@ -15,7 +15,7 @@ const PresentationSection = () => {
 
                         <p className={styles.description}>Estude de onde estiver, a qualquer momento, e continue <br/> 
                             evoluindo como programador.</p>
-                            <Link href="/register">
+                            <Link href="/register" className={styles.hrefRegister}>
                                 <Button outline className={styles.btnCta}>
                                     ACESSE AGORA <img src="/buttonPlay.svg" alt="buttonImg"  className={styles.btnImg}/>
                                 </Button>
