@@ -3,7 +3,7 @@ import Head from 'next/head'
 import HeaderGeneric from '@/src/components/commom/headerGeneric'
 import {Form, FormGroup, Label, Container, Button, Input} from 'reactstrap'
 import Footer from '@/src/components/commom/footer'
-import { FormEvent, useState } from 'react'
+import { FormEvent, useEffect, useState } from 'react'
 import authService from '@/src/services/authService'
 import { useRouter } from 'next/router'
 import ToastComponent from '@/src/components/commom/toast'
@@ -14,6 +14,12 @@ const Register = () => {
 
     const [toastIsOpen, setToastIsOpen] = useState(false)
     const [toastMessage, settoastMessage] = useState("")
+
+    useEffect(() => {
+        if(sessionStorage.getItem("devflix-token")){
+            router.push("/home")
+        }
+    }, [])
 
     const handlerRgister = async (event : FormEvent<HTMLFormElement>) => {
         event.preventDefault()

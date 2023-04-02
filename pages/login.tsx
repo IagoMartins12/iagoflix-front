@@ -17,6 +17,12 @@ const Login =() => {
     const [toastMessage, setToastMessage] = useState("")
 
     useEffect(() => {
+        if(sessionStorage.getItem("devflix-token")){
+            router.push("/home")
+        }
+    }, [])
+
+    useEffect(() => {
         const registerSucess = router.query.registred;
 
         if (registerSucess === "true") {
