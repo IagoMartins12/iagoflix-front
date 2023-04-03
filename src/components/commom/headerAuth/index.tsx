@@ -45,7 +45,7 @@ const HeaderAuth = () => {
                 shouldCloseOnEsc = {true}
                 className={styles.modal}
                 overlayClassName={styles.overlayModal}>
-                    <Link href="/profile">
+                    <Link href="/profile" className={styles.a}>
                         <p className={styles.modalLink}>Meus Dados</p>
                     </Link>
                     <p className={styles.modalLink} onClick={handleLogout}> Sair </p>
