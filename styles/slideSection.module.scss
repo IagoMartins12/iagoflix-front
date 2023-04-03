@@ -1,0 +1,12 @@
+.titleCategory{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 2%;
+    align-self: flex-start;
+}
+
+@media(max-width: 820px){
+    .titleCategory{
+        padding-left: 5%;
+    }
+}

@@ -5,7 +5,7 @@ import courseService, { CourseType } from "../../../services/courseService";
 import HeaderAuth from "../../commom/headerAuth";
 import styles from "./styles.module.scss"
 
-const FeaturedSection = function () {
+const FeaturedSection= function () {
     const { data, error } = useSWR("/featured", courseService.getFeaturedCourses);
 
     if (error) return error;
