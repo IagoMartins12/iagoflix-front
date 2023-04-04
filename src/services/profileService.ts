@@ -8,6 +8,11 @@ interface UserParams {
     created_at: string 
 }
 
+interface PasswordParams {
+    currentPassword: string 
+    newPassword: string 
+}
+
 const profileService = {
 
     fetchCurrent: async () => {
@@ -41,6 +46,24 @@ const profileService = {
         
         return res.status
     }, 
+
+    passwordUpdate:async (params: PasswordParams) => {
+        const token = sessionStorage.getItem("devflix-token")
+
+        const res = await api.put("/users/current/password", params, {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        }).catch((error) => {
+            if (error.response.status === 400 || error.response.status === 401 ){
+                return error.response
+            }
+            return error
+        })
+        
+        console.log(res)
+        return res.status
+    }
 }
 
 export default profileService
