@@ -13,6 +13,7 @@ const FavoriteCategory = () => {
     return (
         <>
         <Container className='d-flex flex-column align-items-center pt-5'>
+            <p className={styles.titleCategory}>MEUS FAVORITOS </p>
             {data.data.courses.lenght >= 1 ? (
                 <SlideComponent course={data.data.courses}/>
             ) : (

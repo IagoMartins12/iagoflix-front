@@ -6,7 +6,6 @@
 .imgLogoNav {
     width: 160px;
     cursor: pointer;
-
 }
 
 .nav{
@@ -25,7 +24,7 @@
 
 .userProfile{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     background-color: white;
     color: black;
     text-transform: uppercase;
@@ -102,5 +101,11 @@
 
     .modal{
         top: 150px;
+    }
+}
+
+@media(max-width: 600px){
+    .imgLogoNav {
+        width: 120px;
     }
 }
