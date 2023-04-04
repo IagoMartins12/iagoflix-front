@@ -83,19 +83,19 @@ const Register = () => {
                     <p className="text-center"><strong>Faça a sua conta!</strong> </p>
                     <FormGroup>
                         <Label for='firstName' className={styles.label}>NOME</Label>
-                        <Input id='firstName' autoComplete="off" name='firstName' type='text' placeholder='Qual o seu nome?' required maxLength={20} className={styles.inputName}/>
+                        <Input id='firstName' name='firstName' type='text' placeholder='Qual o seu nome?' required maxLength={20} className={styles.inputName}/>
                     </FormGroup>
                     <FormGroup>
                         <Label for='lastName' className={styles.label}>SOBRENOME</Label>
-                        <Input id='lastName' autoComplete="off" name='lastName' type='text' placeholder='Qual o seu sobrenome?' required maxLength={20} className={styles.inputName}/>
+                        <Input id='lastName' name='lastName' type='text' placeholder='Qual o seu sobrenome?' required maxLength={20} className={styles.inputName}/>
                     </FormGroup>
                     <FormGroup>
                         <Label for='phone' className={styles.label}>WHATSAPP / TELEGRAM</Label>
-                        <Input id='phone' autoComplete="off" name='phone' type='tel' placeholder='(xx) 9xxxx-xxxx' data-mask="[-]+55 (00) 00000-0000" required className={styles.input}/>
+                        <Input id='phone' name='phone' type='tel' placeholder='(xx) 9xxxx-xxxx' data-mask="[-]+55 (00) 00000-0000" required className={styles.input}/>
                     </FormGroup>
                     <FormGroup>
                         <Label for='email' className={styles.label}>EMAIL</Label>
-                        <Input id='email' autoComplete="off" name='email' type='email' placeholder='Qual o seu email?' required className={styles.input}/>
+                        <Input id='email' name='email' type='email' placeholder='Qual o seu email?' required className={styles.input}/>
                     </FormGroup>
                     <FormGroup>
                         <Label for='birth' className={styles.label}>DATA DE NASCIMENTO</Label>

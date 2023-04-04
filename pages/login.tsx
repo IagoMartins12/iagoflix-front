@@ -77,11 +77,11 @@ const Login =() => {
                 </p>
                 <FormGroup>
                     <Label for='email' className={styles.label}>EMAIL</Label>
-                    <Input id='email' name='email' type='email' placeholder='Qual o seu email?' required className={styles.input} autoComplete="off"/>
+                    <Input id='email' name='email' type='email' placeholder='Qual o seu email?' required className={styles.input} />
                 </FormGroup>
                 <FormGroup>
                     <Label for='password' className={styles.label}>SENHA</Label>
-                    <Input id='password' name='password' type='password' placeholder='Qual a sua senha?' required autoComplete="off" className={styles.input}/>
+                    <Input id='password' name='password' type='password' placeholder='Qual a sua senha?' required  className={styles.input}/>
                 </FormGroup>
                 <Button type='submit' outline className={styles.formBtn}>
                     ENTRAR

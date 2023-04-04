@@ -3,13 +3,15 @@ import { Container } from "reactstrap";
 import useSWR from "swr";
 import SlideComponent from "../../commom/slideComponent";
 import styles from "../../../../styles/slideSection.module.scss"
+import PageSpinner from "../../commom/spinner";
 
 const FavoriteCategory = () => {
     const { data, error } = useSWR("/favorites", courseService.getFavCourses);
 
     if (error) return error;
-    if (!data) return <> <p>Loading ...</p> </>
-
+    if (!data) {
+        return <PageSpinner/>
+    }
     return (
         <>
         <Container className='d-flex flex-column align-items-center pt-5'>

@@ -78,8 +78,13 @@
         background-color: transparent;
         color: white;
     }
-
 }
+
+.inputFlex:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px rgb(22, 22, 22) inset; 
+    -webkit-text-fill-color: white; 
+}
+
 .inputNormalDiv{
     display: flex;
     flex-direction: column;
@@ -92,6 +97,11 @@
     @extend .inputFlex;
     text-transform: none;
     width: 550px;
+}
+
+.input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px rgb(22, 22, 22) inset; 
+    -webkit-text-fill-color: white; 
 }
 
 .formBtn {

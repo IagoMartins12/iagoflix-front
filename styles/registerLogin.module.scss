@@ -35,10 +35,15 @@
 
     &:focus{
         background-color: transparent;
-        border-color: $lightGray;
+        border-color: $lightRed;
         color: white;
         box-shadow: none;
     }
+}
+
+.input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px black inset; 
+    -webkit-text-fill-color: white; 
 }
 
 .inputName {
