@@ -4,6 +4,9 @@ import HeaderAuth from "@/src/components/commom/headerAuth";
 import { useRouter } from "next/router";
 import courseService, { CourseType } from "@/src/services/courseService";
 import { useEffect, useState } from "react";
+import { Container } from "reactstrap";
+import SearchCard from "@/src/components/searchCard";
+import Footer from "@/src/components/commom/footer";
 
 const Search = () => {
 
@@ -26,13 +29,26 @@ const Search = () => {
             <title>DevFlix - {searchName}</title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
         </Head>
-        <main>
-            <HeaderAuth />
-            {searchResult?.map((course) => (
-                <div key={course.id}>
-                    <p>{course.name}</p>
+        <main className={styles.main}>
+            <div className={styles.headFooterBg}>
+                <HeaderAuth />
+            </div>
+            {searchResult.length >= 1 ? (
+                <div className={styles.searchResult}>
+                    <Container className="d-flex flex-wrap justify-content-center gap-5 py-4">
+                    {searchResult?.map((course) => (
+                        <SearchCard key={course.id} course={course}/>
+                    ))}
+                    </Container>
                 </div>
-            ))}
+            ) : (
+                <div className={styles.searchResult}>
+                    <p className={styles.noSearchResult}> Nenhum resultado encontrado :( </p>
+                </div>
+            ) }
+            <div className={styles.headFooterBg}>
+                <Footer />
+            </div>
         </main>
         </>
     );
