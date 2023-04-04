@@ -17,7 +17,7 @@
 }
 
 .nameAbbreviation {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: bold;
     min-width: 70px;
     min-height: 70px;
@@ -102,14 +102,20 @@
     font-size: 15px;
     padding: 6px 20px;
     transition: 0.4s;
+    display: block;
+    margin: 10px auto;
     &:hover {
         border-color: $darkRed;
         background-color: transparent;
-        color: $lightGray;
+        color: $lightRed;
     }
     &:focus {
         box-shadow: none;
         outline: none;
+    }
+
+    &:active {
+        background-color: transparent;
     }
 }
 
@@ -130,9 +136,13 @@
     padding: 14px 0px;
 
     &:hover {
-        border-color: $lightRed;
-        color: $lightGray;
+        border-color: $darkRed;
+        color: $lightRed;
         background-color: transparent;
+    }
+    &:focus{
+        background-color: transparent;
+        box-shadow: none;
     }
 }
 
