@@ -65,7 +65,6 @@ const Login =() => {
         <Head>
             <title>IagoFlix - Login</title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
-            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
         </Head>
         <main className={styles.main} style={{display: "flex", flexDirection: "column"}}>
             <HeaderGeneric logoUrl="/" btnUrl="/register" btnContent="Quero fazer parte" />

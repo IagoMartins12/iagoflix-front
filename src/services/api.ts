@@ -6,8 +6,8 @@ import axios from "axios";
 const baseURL = process.env.NEXT_PUBLIC_BASEURL
 
 const api = axios.create({
-    baseURL: baseURL,
-    insecureHTTPParser: true,
+    baseURL,
+    insecureHTTPParser: true 
 });
 
 export default api

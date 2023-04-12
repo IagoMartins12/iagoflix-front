@@ -41,7 +41,6 @@ const Search = () => {
         <Head>
             <title>IagoFlix - {searchName}</title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
-            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
         </Head>
         <main className={styles.main}>
             <div className={styles.headFooterBg}>

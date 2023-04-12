@@ -32,7 +32,6 @@ const HomeAuth = ( ) => {
         <Head>
             <title> IagoFlix - Home </title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
-            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
         </Head>
         <main>
             <FeaturedSection/>

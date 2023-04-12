@@ -27,7 +27,6 @@ const HomeNoAuth = ({course} : IndexPageProps ) => {
         <title> IagoFlix </title>
         <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
         <meta property='og:title' content='DevFlix' key="title"/>
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
         <meta name='description' 
         content='Tenha acesso aos melhores conteudos do mundo cinematográfico de uma forma simples e fácil'/>
       </Head>

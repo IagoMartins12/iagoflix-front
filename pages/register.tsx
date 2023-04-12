@@ -72,7 +72,6 @@ const Register = () => {
         <Head>
             <title>IagoFlix - Registro </title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
-            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
             {/* eslint-disable-next-line @next/next/no-sync-scripts  */}
             <script src="https://jsuites.net/v4/jsuites.js"></script>
         </Head>
