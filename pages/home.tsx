@@ -15,13 +15,13 @@ const HomeAuth = ( ) => {
     const router = useRouter()
     const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
-        if (!sessionStorage.getItem('devflix-token')){
-            router.push("/login")
-        } else {
-            setLoading(false)
-        }
-    }, [])
+    // useEffect(() => {
+    //     if (!sessionStorage.getItem('devflix-token')){
+    //         router.push("/login")
+    //     } else {
+    //         setLoading(false)
+    //     }
+    // }, [])
 
     if (loading){
         return <PageSpinner/>
