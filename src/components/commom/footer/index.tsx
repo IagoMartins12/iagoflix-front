@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <>
         <Container className={styles.footer}>
-            <img src="/logoOnebitcode.svg" alt="logoFooter" className={styles.footerLogo}/>
+            <img src="/logos/logoSemBackground.png" alt="logoFooter" className={styles.footerLogo}/>
             <div className='d-flex gap-3'>
                 <a href="https://www.linkedin.com/in/iago-martins-313838213/" className={styles.footerIcon} target="_blank"> <GrLinkedin size={23}/></a>
                 <a href="https://github.com/IagoMartins12" className={styles.footerIcon} target="_blank"> <BsGithub size={23}/></a>

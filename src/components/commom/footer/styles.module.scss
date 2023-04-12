@@ -11,7 +11,7 @@
 }
 
 .footerLogo{
-    width: 180px;
+    width: 140px;
 }
 
 .footerLink {
@@ -36,18 +36,22 @@
     }
 
     .footerLogo{
-        width: 245px;
+        width: 150px;
+    }
+
+    .footer {
+        flex-direction: column;
     }
     
 }
 
 @media(max-width: 414px) {
     .footerLogo{
-        width: 260px;
+        width: 140px;
     }
     
     .footer {
-        gap: 25px;
+        gap: 20px;
         justify-content: center;
     }
 }

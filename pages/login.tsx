@@ -1,7 +1,6 @@
 import Footer from "@/src/components/commom/footer";
 import ToastComponent from "@/src/components/commom/toast";
 import authService from "@/src/services/authService";
-import { stat } from "fs";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { FormEvent, useEffect, useState } from "react";
@@ -64,16 +63,16 @@ const Login =() => {
     return (
         <>
         <Head>
-            <title>DevFlix - Login</title>
+            <title>IagoFlix - Login</title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
         </Head>
-        <main className={styles.main}>
+        <main className={styles.main} style={{display: "flex", flexDirection: "column"}}>
             <HeaderGeneric logoUrl="/" btnUrl="/register" btnContent="Quero fazer parte" />
-        <Container className="py-5">
+        <Container className="py-5" style={{flex: "1 0 auto"}}>
             <p className={styles.formTitle}> Bem-vindo de volta! </p>
             <Form className={styles.form} onSubmit={handleLogin}>
                 <p className="text-center"> 
-                    <strong>Bem vindo(a) ao DevFlix! </strong>
+                    <strong>Bem vindo(a) ao IagoFlix! </strong>
                 </p>
                 <FormGroup>
                     <Label for='email' className={styles.label}>EMAIL</Label>

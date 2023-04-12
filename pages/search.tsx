@@ -7,26 +7,39 @@ import { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import SearchCard from "@/src/components/searchCard";
 import Footer from "@/src/components/commom/footer";
+import PageSpinner from "@/src/components/commom/spinner";
 
 const Search = () => {
 
     const router = useRouter()
     const searchName : any = router.query.name
     const [searchResult, setSearchResult] = useState<CourseType[]>([])
-    
-    const searchCourses = async function () {
-        const res = await courseService.getSearch(searchName)
-        setSearchResult(res.data.courses)
-    }
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        searchCourses()
-    }, [searchName])
+        const searchCourses = async function () {
+            const res = await courseService.getSearch(searchName)
+            setSearchResult(res.data.courses)
+        }
+
+        if (!sessionStorage.getItem('devflix-token')){
+            router.push("/login")
+        } else {
+            setLoading(false)
+            searchCourses()
+        }
+    }, [router, searchName])
+
+    if (loading){
+        return <PageSpinner/>
+    }
+    
+    if (searchResult === undefined) return <PageSpinner/>
 
     return (
         <>
         <Head>
-            <title>DevFlix - {searchName}</title>
+            <title>IagoFlix - {searchName}</title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
         </Head>
         <main className={styles.main}>

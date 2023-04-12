@@ -70,7 +70,7 @@ const Register = () => {
     return (
         <>
         <Head>
-            <title>DevFlix - Registro </title>
+            <title>IagoFlix - Registro </title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
             {/* eslint-disable-next-line @next/next/no-sync-scripts  */}
             <script src="https://jsuites.net/v4/jsuites.js"></script>
@@ -78,7 +78,7 @@ const Register = () => {
         <main className={styles.main}>
             <HeaderGeneric logoUrl='/' btnUrl='/login' btnContent='Quero fazer login'/>
             <Container className='py-5'>
-                <p className={styles.formTitle}> Bem-vindo(a) ao DevFlix!</p>
+                <p className={styles.formTitle}> Bem-vindo(a) ao IagoFlix!</p>
                 <Form className={styles.form} onSubmit={handlerRgister}>
                     <p className="text-center"><strong>Faça a sua conta!</strong> </p>
                     <FormGroup>
@@ -90,7 +90,7 @@ const Register = () => {
                         <Input id='lastName' name='lastName' type='text' placeholder='Qual o seu sobrenome?' required maxLength={20} className={styles.inputName}/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for='phone' className={styles.label}>WHATSAPP / TELEGRAM</Label>
+                        <Label for='phone' className={styles.label}>WHATSAPP</Label>
                         <Input id='phone' name='phone' type='tel' placeholder='(xx) 9xxxx-xxxx' data-mask="[-]+55 (00) 00000-0000" required className={styles.input}/>
                     </FormGroup>
                     <FormGroup>

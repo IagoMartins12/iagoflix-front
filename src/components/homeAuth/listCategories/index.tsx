@@ -11,8 +11,11 @@ const ListCategories = ( ) => {
     if (!data) {
         return <PageSpinner/>
     }
+
     return (
-        <>{data.data.categories?.map(( categorie: CategoryTipe ) => (
+        <>
+        {data.data.categories?.map(( categorie: CategoryTipe ) => (
+            
             <ListCategoriesSlide key={categorie.id} categoryId={categorie.id} categoryName={categorie.name}/>
         ))}
         </>

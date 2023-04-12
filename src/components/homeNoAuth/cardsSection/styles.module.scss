@@ -60,25 +60,25 @@
 
 .card1 {
   @extend .card;
-  background-image: url("../../../../public/homeNoAuth/imgFrontend.png");
+  background-image: url("../../../../public/imgs/animes.jpg");
 }
 .card2 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgBackend.png");
+    background-image: url("../../../../public/imgs/filmes.jpg");
 }
 .card3 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgMobile.png");
+    background-image: url("../../../../public/imgs/series.jpeg");
 }
 .card4 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgGit.png");
+    background-image: url("../../../../public/imgs/desenho.jpg");
 }
 .card5 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgProjects.png");
+    background-image: url("../../../../public/imgs/dorama.jpg");
 }
 .card6 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgCareer.png");
+    background-image: url("../../../../public/imgs/documentarios.jpeg");
 }

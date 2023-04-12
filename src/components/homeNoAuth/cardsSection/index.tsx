@@ -6,51 +6,48 @@ const CardsSection = function () {
 	<p className={styles.sectionTitle}>O QUE VOCÊ VAI ACESSAR</p>
 	<Container className="d-flex flex-wrap justify-content-center gap-5 pb-5">
 		<div className={styles.card1}>
-			<p className={styles.cardTitle}>FRONT-END</p>
+			<p className={styles.cardTitle}>ANIMES</p>
 			<p className={styles.cardDescription}>
-				O DevFlix é o lugar para você evoluir. Para isso, você vai
-				ter acesso às práticas avançadas de programação, atualizações de
-				tecnologias e todo o suporte técnico necessário para ser um sênior na programação.
+            Mergulhe em um mundo de animação e fantasia com nossos animes incríveis. 
+            Desde histórias emocionantes de amor e amizade até aventuras épicas de luta e magia, 
 			</p>
 		</div>
         <div className={styles.card2}>
-            <p className={styles.cardTitle}>BACK-END</p>
+            <p className={styles.cardTitle}>FILMES</p>
             <p className={styles.cardDescription}>
-                O DevFlix é o lugar para você evoluir. Para isso, você vai
-                ter acesso às práticas avançadas de programação, atualizações de
-                tecnologias e todo o suporte técnico necessário para ser um sênior na programação.
+            Os melhores lançamentos e clássicos do cinema, disponíveis para você assistir a qualquer
+            hora e em qualquer lugar. 
+            De comédias românticas a filmes de ação e aventura.
             </p>
         </div>
         <div className={styles.card3}>
-            <p className={styles.cardTitle}>MOBILE</p>
+            <p className={styles.cardTitle}>SERIES</p>
             <p className={styles.cardDescription}>
-                O DevFlix é o lugar para você evoluir. Para isso, você vai
-                ter acesso às práticas avançadas de programação, atualizações de
-                tecnologias e todo o suporte técnico necessário para ser um sênior na programação.
+            Fique por dentro das séries mais populares e emocionantes do momento.
+            Desde dramas intensos até comédias divertidas.
             </p>
         </div>
         <div className={styles.card4}>
-            <p className={styles.cardTitle}>GIT E GITHUB</p>
+            <p className={styles.cardTitle}>DESENHOS</p>
             <p className={styles.cardDescription}>
-                O DevFlix é o lugar para você evoluir. Para isso, você vai
-                ter acesso às práticas avançadas de programação, atualizações de
-                tecnologias e todo o suporte técnico necessário para ser um sênior na programação.
+            Para as crianças e também para os adultos que adoram desenhos animados, nossa categoria 
+            de desenhos traz os personagens mais queridos e divertidos da televisão. 
+            Acompanhe as aventuras de seus heróis e vilões favoritos!
             </p>
         </div>
         <div className={styles.card5}>
-            <p className={styles.cardTitle}>PROJETOS</p>
+            <p className={styles.cardTitle}>DORAMAS</p>
             <p className={styles.cardDescription}>
-                O DevFlix é o lugar para você evoluir. Para isso, você vai
-                ter acesso às práticas avançadas de programação, atualizações de
-                tecnologias e todo o suporte técnico necessário para ser um sênior na programação.
+            Explore o universo dos dramas coreanos e japoneses com nossos doramas emocionantes e 
+            envolventes. Desde romances intensos até histórias de amizade e superação
             </p>
         </div>
         <div className={styles.card6}>
-            <p className={styles.cardTitle}>CARREIRA</p>
+            <p className={styles.cardTitle}>DOCUMENTARIOS</p>
             <p className={styles.cardDescription}>
-                O DevFlix é o lugar para você evoluir. Para isso, você vai
-                ter acesso às práticas avançadas de programação, atualizações de
-                tecnologias e todo o suporte técnico necessário para ser um sênior na programação.
+            Para quem gosta de aprender e se informar, nossa categoria de documentários traz histórias 
+            reais e fascinantes sobre o mundo em que vivemos. 
+            Conheça lugares, pessoas e culturas de uma forma envolvente e inspiradora.
             </p>
         </div>
 	</Container>

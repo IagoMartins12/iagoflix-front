@@ -13,7 +13,7 @@
 }
 
 .headerLogo{
-    width: 180px;
+    width: 150px;
     height: 50px;
     cursor: pointer;
 }
@@ -25,6 +25,9 @@
 }
 
 @media(max-width: 575px) {
+    .headerLogo{
+        width: 135px;
+    }
     .headerContainer{
         padding: 20px 16px;
     }

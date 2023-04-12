@@ -7,7 +7,7 @@ const HeaderNoAuth = () => {
         <>
         <div className={styles.ctaSection}>
                 <img src="/homeNoAuth/logoCta.png" alt="logoCta" className={styles.imgCta}/>
-                <p> Se cadastre para ter acesso aos cursos </p>
+                <p style={{textAlign: "center"}}> Se cadastre para ter acesso aos melhores conteudos do mundo cinematográfico</p>
                 <img src="/homeNoAuth/logoCta.png" alt="logoCta" className={styles.imgCta}/>
             </div>
             <Container className={styles.nav}>

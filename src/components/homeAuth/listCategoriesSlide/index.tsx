@@ -18,11 +18,15 @@ const ListCategoriesSlide = ({categoryId, categoryName} : props ) => {
     if (!data) {
         return <PageSpinner/>
     }
+    console.log(data)
+
     return (
         <>
         <Container className='d-flex flex-column align-items-center pt-5'>
             <p className={styles.titleCategory}>{categoryName}</p>
-            <SlideComponent course={data.data.courses}/>
+            {data.data.courses.length == 0 ? (
+                <p className='text-center pt-5 h4 pb-5'> <strong> Não possuimos obras nesta categoria ainda :(  </strong></p>
+            ) : <SlideComponent course={data.data.courses}/>}
         </Container>
         </>
     )
