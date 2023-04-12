@@ -23,9 +23,9 @@ const HomeAuth = ( ) => {
     //     }
     // }, [])
 
-    if (loading){
-        return <PageSpinner/>
-    }
+    // if (loading){
+    //     return <PageSpinner/>
+    // }
     
     return (
         <>
