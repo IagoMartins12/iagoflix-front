@@ -4,6 +4,8 @@ import { GrLinkedin } from 'react-icons/gr'
 import { BsGithub,BsInstagram} from 'react-icons/bs'
 
 const Footer = () => {
+
+    const year = new Date().getFullYear()
     return (
         <>
         <Container className={styles.footer}>
@@ -15,7 +17,7 @@ const Footer = () => {
             </div>
         </Container>
         <Container fluid className='d-flex justify-content-center align-items-center'>
-            <span className= {styles.footerName}> Iago Martins &copy;2022 </span>
+            <span className= {styles.footerName}> Iago Martins &copy; {year} </span>
         </Container>
 
         </>

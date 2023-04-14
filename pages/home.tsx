@@ -15,24 +15,23 @@ const HomeAuth = ( ) => {
     const router = useRouter()
     const [loading, setLoading] = useState(true)
 
-    // useEffect(() => {
-    //     if (!sessionStorage.getItem('devflix-token')){
-    //         router.push("/login")
-    //     } else {
-    //         setLoading(false)
-    //     }
-    // }, [])
+    useEffect(() => {
+        if (!sessionStorage.getItem('devflix-token')){
+            router.push("/login")
+        } else {
+            setLoading(false)
+        }
+    }, [])
 
-    // if (loading){
-    //     return <PageSpinner/>
-    // }
+    if (loading){
+        return <PageSpinner/>
+    }
     
     return (
         <>
         <Head>
             <title> IagoFlix - Home </title>
             <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
-            <meta content="upgrade-insecure-requests" />
         </Head>
         <main>
             <FeaturedSection/>

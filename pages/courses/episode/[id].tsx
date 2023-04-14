@@ -103,7 +103,7 @@ const EpisodePlayer = function () {
         <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
       </Head>
       <main>
-        <HeaderGeneric logoUrl="/home" btnContent={'Voltar para o curso'} btnUrl={`/courses/${courseId}`}/>
+        <HeaderGeneric logoUrl="/home" btnContent={'Voltar'} btnUrl={`/courses/${courseId}`}/>
         <Container className="d-flex flex-column align-items-center gap-3 pt-5">
           <p className={styles.episodeTitle}> {course.episodes[episodeOrder].name}</p>
           {typeof window === 'undefined' ? null : (
