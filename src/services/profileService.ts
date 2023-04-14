@@ -61,7 +61,6 @@ const profileService = {
             return error
         })
         
-        console.log(res)
         return res.status
     }
 }
