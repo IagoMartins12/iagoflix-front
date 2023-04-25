@@ -12,31 +12,19 @@ const EpisodeList = ({ episode, course } : props) => {
     const router = useRouter()
 
     const handleSecondsToMin = (totalSeconds: number) => {
-        const minutes = Math.floor(totalSeconds / 60);
-
-        let age : number | boolean = false
-        if (totalSeconds >= 3600 && totalSeconds < 7199){
-            age = 1
-        } else if (totalSeconds >= 7200) {
-            age = 2
-
-        }
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
         const seconds = totalSeconds % 60;
-    
-        function toString(num: number) {
-            return num.toString().padStart(2, "0");
-        }
-    
-        let result = ''
-
-        if (age){
-            result = `0${toString(age)}:${toString(minutes)}:${toString(seconds)}`;
-
+      
+        const timeArr = [hours, minutes, seconds].map((num) => num.toString().padStart(2, "0"));
+      
+        if (hours > 0) {
+          return `${timeArr[0]}:${timeArr[1]}:${timeArr[2]}`;
         } else {
-            result = `${toString(minutes)}:${toString(seconds)}`;
+          return `${timeArr[1]}:${timeArr[2]}`;
         }
-        return result;
-    };
+      };
+      
 
     const handlerEpisodePlayer = () => {
         router.push(`/courses/episode/${episode.order - 1}?courseid=${course.id}&episodeid=${episode.id}`)
