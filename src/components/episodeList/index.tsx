@@ -13,15 +13,28 @@ const EpisodeList = ({ episode, course } : props) => {
 
     const handleSecondsToMin = (totalSeconds: number) => {
         const minutes = Math.floor(totalSeconds / 60);
-    
+
+        let age : number | boolean = false
+        if (totalSeconds >= 3600 && totalSeconds < 7199){
+            age = 1
+        } else if (totalSeconds >= 7200) {
+            age = 2
+
+        }
         const seconds = totalSeconds % 60;
     
         function toString(num: number) {
             return num.toString().padStart(2, "0");
         }
     
-        const result = `${toString(minutes)}:${toString(seconds)}`;
-    
+        let result = ''
+
+        if (age){
+            result = `0${toString(age)}:${toString(minutes)}:${toString(seconds)}`;
+
+        } else {
+            result = `${toString(minutes)}:${toString(seconds)}`;
+        }
         return result;
     };
 

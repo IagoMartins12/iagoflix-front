@@ -24,7 +24,7 @@ const HomeNoAuth = ({course} : IndexPageProps ) => {
   return (
     <>
       <Head>
-        <title> IagoFlix </title>
+        <title> IagoFlix | Iago Martins</title>
         <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
         <meta property='og:title' content='Iagoflix' key="title"/>
         <meta name='description' 

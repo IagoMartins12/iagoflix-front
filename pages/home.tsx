@@ -1,5 +1,4 @@
 import Footer from "@/src/components/commom/footer"
-import HeaderGeneric from "@/src/components/commom/headerGeneric"
 import PageSpinner from "@/src/components/commom/spinner"
 import FavoriteCategory from "@/src/components/homeAuth/favoriteCategory"
 import FeaturedCategory from "@/src/components/homeAuth/featuredCategory"
